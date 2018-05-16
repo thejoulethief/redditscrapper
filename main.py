@@ -22,9 +22,6 @@ username = input("Input username to query.\n")
 filename = username + "_Comments_" + date  + "'.txt"
 text_file = open(filename,"w")
 
-
-
-
 user = reddit.redditor(username)
 
 for comment in user.comments.new(limit=1000):
